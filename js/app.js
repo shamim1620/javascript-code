@@ -56,8 +56,11 @@ const bookInfo = data => {
     if (data === undefined) {
         return "unknown";
     }
-    else {
+    else if (data.length > 2) {
         return data[0];
+    }
+    else {
+        return data;
     }
 }
 
