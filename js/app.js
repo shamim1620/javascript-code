@@ -1,3 +1,4 @@
+// search field and data fetch 
 const searchBook = () => {
     const searchField = document.getElementById('search-field');
     const searchText = searchField.value;
@@ -15,6 +16,7 @@ const searchBook = () => {
             .then(data => resultFound(data));
     }
 }
+// Number of search result 
 const resultFound = data => {
     const searchFound = document.getElementById('search-found');
     if (data.numFound === 0) {
@@ -27,7 +29,7 @@ const resultFound = data => {
         displayResult(data.docs);
     }
 }
-
+// Display book and detail 
 const displayResult = books => {
     const searchResult = document.getElementById('search-result');
     searchResult.textContent = '';
@@ -49,6 +51,7 @@ const displayResult = books => {
         searchResult.appendChild(div);
     });
 }
+// book details show 
 const bookInfo = data => {
     if (data === undefined) {
         return "unknown";
@@ -57,6 +60,8 @@ const bookInfo = data => {
         return data[0];
     }
 }
+
+// clear screen 
 const clearScreen = result => {
     const searchResult = document.getElementById('search-result');
     const searchFound = document.getElementById('search-found');
