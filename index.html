@@ -13,19 +13,20 @@
 
 <body>
     <!-- search section  -->
-    <h2 class="text-success text-center fs-1 fw-bold">Search your favorite <span class="text-info">book</span></h2>
-    <div class="input-group mb-3 w-50 mx-auto">
-        <input id="search-field" type="text" class="form-control" placeholder="search your book here"
-            aria-label="search your book here" aria-describedby="button-addon2">
-        <button onclick="searchBook()" class="btn btn-outline-secondary " type="button"
-            id="search-botton">Search</button>
-    </div>
-    <div id="empty-text">
+    <header>
+        <h2 class="text-success text-center fs-1 fw-bold">Search your favorite <span class="text-info">book</span></h2>
+        <div class="input-group mb-3 w-50 mx-auto">
+            <input id="search-field" type="text" class="form-control" placeholder="search your book here"
+                aria-label="search your book here" aria-describedby="button-addon2">
+            <button onclick="searchBook()" class="btn btn-outline-secondary " type="button"
+                id="search-botton">Search</button>
+        </div>
+        <div id="empty-text">
+        </div>
 
-    </div>
-
+    </header>
     <!-- result section  -->
-    <main id="screen" class="container">
+    <main class="container">
         <div id="search-found">
 
         </div>
