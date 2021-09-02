@@ -45,7 +45,7 @@ const displayResult = books => {
                 <p class="card-text "><span class="fw-bold">Publisher name: </span>${bookInfo(book.publisher)}</p>
             </div>
             <div class="card-footer">
-                <small class="text-muted">First publish year is ${bookInfo(book.first_publish_year)}</small>
+                <small class="text-muted"><span class="fw-bold">First publish year: </span>${bookInfo(book.first_publish_year)}</small>
             </div>
         </div>`;
         searchResult.appendChild(div);
